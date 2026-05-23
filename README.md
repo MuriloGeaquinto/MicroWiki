@@ -1,8 +1,8 @@
-# MicroWiki
+# Mármore Capixaba
 
 <div align="center">
 
-**Catálogo digital de microcontroladores, sensores e componentes eletrônicos**
+**Catálogo digital de rochas ornamentais do Espírito Santo**
 
 [![React](https://img.shields.io/badge/React-19.2-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-7.3-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
@@ -16,26 +16,14 @@
 
 ## 📋 Sobre o Projeto
 
-**MicroWiki** é uma plataforma digital dedicada à catalogação e divulgação de microcontroladores, sensores, atuadores e componentes eletrônicos. O projeto visa criar uma comunidade colaborativa para entusiastas, engenheiros e estudantes da área de eletrônica e sistemas embarcados.
+**Mármore Capixaba** é uma plataforma digital dedicada à catalogação e divulgação de rochas ornamentais provenientes do Espírito Santo. O projeto visa valorizar a rica geologia capixaba, oferecendo um catálogo interativo com informações técnicas detalhadas sobre cada tipo de rocha.
 
 ### 🎯 Objetivos
 
-- Catalogar componentes eletrônicos com especificações técnicas detalhadas
-- Fornecer bibliotecas e documentação oficial para cada componente
-- Oferecer um fórum de discussão para a comunidade
-- Compartilhar ideias de projetos com código base
-- Apresentar a linha do tempo da evolução dos componentes eletrônicos
-- Garantir uma experiência de usuário fluida e moderna
-
----
-
-## 👥 Público-alvo
-
-| Perfil | Descrição |
-|--------|-----------|
-| 👨‍💻 **Jovens desenvolvedores (17+)** | Interessados em implementar componentes em circuitos eletrônicos |
-| 🔧 **Engenheiros (20+)** | Buscando componentes para futuros projetos |
-| 🧒 **Crianças curiosas (10+)** | Explorando o mundo da eletrônica |
+- Catalogar rochas ornamentais da região do Espírito Santo
+- Fornecer informações técnicas completas (composição mineralógica, propriedades físicas)
+- Garantir rastreabilidade desde a jazida até o produto final
+- Oferecer uma experiência de usuário fluida e moderna
 
 ---
 
@@ -43,14 +31,11 @@
 
 | Funcionalidade | Descrição |
 |----------------|-----------|
-| 🔍 **Busca** | Pesquise componentes por nome, categoria ou fabricante |
-| 🏷️ **Filtro por categoria** | Filtre por microcontroladores, sensores, atuadores, displays e mais |
-| 💬 **Fórum da Comunidade** | Espaço para tirar dúvidas e compartilhar conhecimentos |
-| 💡 **Ideias de Projetos** | Projetos práticos com lista de componentes, bibliotecas e código base |
-| 📅 **Linha do Tempo** | Evolução dos componentes eletrônicos, do ENIAC ao ESP32 |
-| 📊 **Ficha Técnica** | Detalhes completos de cada componente |
-| 🔗 **Links Oficiais** | Acesso direto ao site do fabricante e documentação |
-| 📚 **Bibliotecas** | Links para bibliotecas oficiais e repositórios GitHub |
+| 🔍 **Busca** | Pesquise rochas por nome |
+| 🎨 **Filtro por cor** | Filtre rochas por categoria de cor |
+| 📱 **Design Responsivo** | Experiência otimizada para mobile, tablet e desktop |
+| 📊 **Ficha Técnica** | Detalhes completos de cada rocha (composição, propriedades, localização) |
+| 🗺️ **Rastreabilidade** | Acompanhe o processo da jazida ao produto final |
 | 🎬 **Animações** | Transições suaves com Framer Motion |
 
 ---
@@ -76,7 +61,7 @@
 
 ## 📁 Estrutura do Projeto
 
-MicroWiki 📂/  
+ig-do-marmore 📂/  
 ├── src 📂/  
 │   ├── components 📂/  
 │   │   ├── ui 📂/  
@@ -84,69 +69,52 @@ MicroWiki 📂/
 │   │   │   ├── dropdown-menu.jsx  
 │   │   │   └── input.jsx  
 │   │   │  
-│   │   ├── Card.jsx  
+│   │   ├── RockCard.jsx  
 │   │   ├── SearchBar.jsx  
-│   │   └── Filter.jsx  
+│   │   └── ColorFilter.jsx  
 │   │  
 │   ├── pages 📂/  
-│   │   ├── ComponentsDetail.jsx  
-│   │   ├── Forum.jsx  
 │   │   ├── Home.jsx  
-│   │   ├── Ideias.jsx  
-│   │   └── Timeline.jsx  
+│   │   ├── Sobre.jsx  
+│   │   └── RockDetail.jsx  
 │   │  
 │   ├── data 📂/  
-│   │   ├── componentsData.js  
-│   │   ├── forumData.js  
-│   │   └── projetosData.js  
+│   │   └── rocksData.js  
 │   │  
 │   ├── utils 📂/  
 │   │   ├── ScrollToTop.jsx  
-│   │   └── index.js  
+│   │   └── utils.js  
 │   │  
 │   ├── Layout.jsx  
 │   ├── App.jsx  
 │   ├── main.jsx  
 │   └── index.css  
 │  
-├── img 📂/     
-│   ├── arduino-uno.png 📷  
-│   ├── atmega328p.png 📷  
-│   ├── display-oled-ssd1306.png 📷  
-│   ├── esp32.png 📷  
-│   ├── led-rgb.png 📷  
-│   ├── Logo.png 📷  
-│   ├── motor-nema17.png 📷  
-│   ├── raspberry-pi-4.png 📷  
-│   ├── raspberry-pi-pico.png 📷  
-│   ├── sensor-dht22.png 📷  
-│   └── sensor-hc-sr04.png 📷  
+├── public 📂/   
+│   ├── img 📂/   
+│   │   ├── rastreabilidade 📂/  
+│   │   │   ├── beneficiamento.png 📷  
+│   │   │   ├── bloco.png 📷  
+│   │   │   ├── pedreira.jpg 📷  
+│   │   │   ├── produto-final.png 📷  
+│   │   │   └── produto-final-dumont.png 📷  
+│   │   │  
+│   │   ├── Arabesco.jpg 📷  
+│   │   ├── Bege-Ipanema.jpg 📷  
+│   │   ├── Branco-Cintilante.jpg 📷  
+│   │   ├── Dumont.jpg 📷  
+│   │   └── Luna-Perla.jpg 📷  
+│   │  
+│   ├── logo1.png 📷  
+│   ├── logo2.png 📷  
+│   ├── logo3.png 📷  
+│   └── logo3.png 📷  
 │  
-├── lib 📂/   
-│   └── utils.js    
-│    
-├── eslint.config.js  
 ├── index.html  
-├── package-lock.json  
 ├── package.json  
-├── postcss.config.js  
-├── README.md  
+├── vite.config.js  
 ├── tailwind.config.js  
-└── vite.config.js   
-
----
-
-## 📦 Componentes Catalogados
-
-| Categoria | Componentes |
-|-----------|-------------|
-| 🖥️ **Microcontroladores** | ESP32, ATmega328P, Raspberry Pi Pico |
-| 📱 **Plataformas** | Arduino Uno |
-| 💻 **SBCs** | Raspberry Pi 4 |
-| 👁️ **Sensores** | DHT22, HC-SR04 |
-| ⚙️ **Atuadores** | Motor de Passo NEMA 17 |
-| 🖼️ **Displays** | OLED SSD1306 |
-| 💡 **LEDs** | LED RGB |
+└── postcss.config.js
 
 ---
 
@@ -160,8 +128,8 @@ MicroWiki 📂/
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/seu-usuario/microwiki.git
-cd microwiki
+git clone https://github.com/seu-usuario/ig-do-marmore.git
+cd ig-do-marmore
 
 # 2. Instale as dependências
 npm install
